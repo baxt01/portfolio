@@ -7,7 +7,7 @@
   --hearo: #1d0302c0;
   --containter-border: lawngreen;
     --project-title-color: silver;
-  --project-title: burlywood;
+  --project-title: aqua;
   --project-title-bg: blue;
   --margin: 20px;
 }
@@ -30,6 +30,7 @@ h6 {
 
 p {
   margin: 0;
+  font-weight: 500;
 }
 
 /* setting the header to display flex and alignment to center on both axsis */
@@ -48,6 +49,7 @@ header {
   color: var(--name);
   width: fit-content;
 }
+
 
 /* setting the styles for the list to have no list style and to be horizontal block and centered. */
 header ul li {
@@ -79,6 +81,15 @@ doesn't load and the tet to display right. */
 /* giving the class a right margin of 5% to keep it slightly off the edge of the scren. */
 .portfolio {
   margin-right: 5%;
+  align-items: center;
+  justify-content: center;
+}
+
+/* portfolio image */
+.header-img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
 }
 
 /* setting flex column in the main content and a transparent background area, the width and height to 100% and a 10px padding */
@@ -100,9 +111,7 @@ doesn't load and the tet to display right. */
 /* setting the flex-direction to row pushing the content to the right */
 #about-me {
   flex-direction: row;
-  align-items: right;
-  justify-content: right;
-  margin-left: 40%;
+  margin-left: 20%;
 }
 
 /* setting the flex-direction and wrap setting the width and moving it right a little */

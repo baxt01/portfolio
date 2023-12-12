@@ -1,5 +1,11 @@
 * {
   box-sizing: border-box;
+  /* setting up the Variables for the whole document */
+  --dark-color: #1b1616;
+  --name: sandybrown;
+  --header-links: silver;
+  --hearo: #1d0302c0;
+  --gradient: linear-gradient(red, yellow);
 }
 
 body {
@@ -22,71 +28,72 @@ p {
   margin: 0;
 }
 
+/* setting the header to display flex and alignment to center on both axsis */
 header {  
   display: flex;
-  background-color: black;
+  background-color: var(--dark-color);
   align-items: center;
-  border: double springgreen;
   justify-content: center;
 }
 
-h1 {
+/* setting the class name in the header section for where my name goes and styling the colour's, setting the width to fit the content */
+.name {
   margin-left: 35%;
   margin-right: 15%;
-  background-color: black;
-  color: sandybrown;
-  align-items: center;
-  justify-content: center;
-  border: 3px solid springgreen;
+  background-color: var(--dark-color);
+  color: var(--name);
   width: fit-content;
 }
 
+/* setting the styles for the list to have no list style and to be horizontal block and centered. */
 header ul li {
   display: inline-block;
   align-items: center;
   list-style: none; 
 }
 
+/* setting the font colour of the links removing the underlining vertically centering the links within the list area moving them to 
+the right of the list area. */
 header ul li a {
-  color: silver;
+  color: var(--header-links);
   text-decoration: none;
   align-items: center;
   justify-content: right;
   margin-left: 10px;
   margin-right: 20px;
-  border: 3px solid red;
 }
 
+/* setting the background colour and aligning the content to display right and setting a background colour incase the image 
+doesn't load and the tet to display right. */
 .hero-banner {
-  background-color: blueviolet;
+  background-color: var(--hearo);
   width: 100%;
   text-align: right;
   padding: 25px;
-  border: 3px solid deepskyblue;
 }
 
+/* giving the class a right margin of 5% to keep it slightly off the edge of the scren. */
 .portfolio {
   margin-right: 5%;
 }
 
+/* setting flex column in the main content and a transparent background area, the width and height to 100% and a 10px padding */
 .page-wrapper {
   display: flex;
   flex-flow: column;
-  background-color: aqua;
+  background-color: transparent;
   width: 100%;
   height: 100%;
-}
-
-.page-wrapper > * {
   padding: 10px;
-  flex: 3 50%;
 }
 
+/* setting the  width and height to the titles */
 .page-section > h2{
   width: 130px;
   height: 100%;  
 }
 
+/* setting the flex-direction to row pushing the content to the right */
 #about-me {
   flex-direction: row;
   align-items: right;
@@ -94,44 +101,53 @@ header ul li a {
   margin-left: 40%;
 }
 
+/* setting the flex-direction and wrap setting the width and moving it right a little */
 #work-content {
   flex-direction: row;
   flex-wrap: wrap;
   width: 75%;
-  border: 3px solid orange;
   justify-content: center;
   align-items: center;
   margin-left: 20%;
 }
 
+/* setting up the container for the work area to nest in */
 .container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  border: 3px dotted lawngreen;
+  border: 3px double lawngreen;
 }
 
+/* giving the margin bottom 20px amd filling the width and height to 100% of the top project. */
 .flex-item1 {
+  margin-bottom: 20px;
   width: 100%;
   height: 100%;
-  
 }
 
+/* sizing the image */
 .portfolio-1-clickable-image-link {
   width: 100%;
   height: 150px;
 }
 
+/* setting the last 4 projects to a smaller width */
 .flex-item2,
 .flex-item3,
 .flex-item4,
 .flex-item5 {
+  margin-bottom: 20px;
   width: 48%;
-  height: 100%;
+  height: 150%;
 }
 
+/* styling the project titles. */
 .project-title {
+  margin-top: -20px;
+  align-items: end;
+  justify-content: end;
   border: 2px solid burlywood;
   width: fit-content;
   padding: 3px;

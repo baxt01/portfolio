@@ -5,7 +5,11 @@
   --name: sandybrown;
   --header-links: silver;
   --hearo: #1d0302c0;
-  --gradient: linear-gradient(red, yellow);
+  --containter-border: lawngreen;
+    --project-title-color: silver;
+  --project-title: burlywood;
+  --project-title-bg: aqua;
+  --margin: 20px;
 }
 
 body {
@@ -60,7 +64,7 @@ header ul li a {
   align-items: center;
   justify-content: right;
   margin-left: 10px;
-  margin-right: 20px;
+  margin-right: var(--margin);
 }
 
 /* setting the background colour and aligning the content to display right and setting a background colour incase the image 
@@ -117,12 +121,12 @@ doesn't load and the tet to display right. */
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  border: 3px double lawngreen;
+  border: 3px double var(--container-border);
 }
 
 /* giving the margin bottom 20px amd filling the width and height to 100% of the top project. */
 .flex-item1 {
-  margin-bottom: 20px;
+  margin-bottom: var(--margin);
   width: 100%;
   height: 100%;
 }
@@ -138,7 +142,7 @@ doesn't load and the tet to display right. */
 .flex-item3,
 .flex-item4,
 .flex-item5 {
-  margin-bottom: 20px;
+  margin-bottom: var(--margin);
   width: 48%;
   height: 150%;
 }
@@ -148,10 +152,10 @@ doesn't load and the tet to display right. */
   margin-top: -20px;
   align-items: end;
   justify-content: end;
-  border: 2px solid burlywood;
+  border: 2px solid var(--project-title);
   width: fit-content;
   padding: 3px;
   font-weight: 600;
-  color: silver;
-  background-color: blue;
+  color: var(--project-title-color);
+  background-color: var(--project-title-bg);
 }

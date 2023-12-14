@@ -11,6 +11,7 @@
   --project-title-bg: blue;
   --margin: 20px;
   --footer-links: aqua;
+  --hero-color: chocolate;
 }
 
 body {
@@ -71,16 +72,18 @@ header ul li a {
 }
 
 header ul li a:hover {
-  background-color: blue;
+  background-color: var(--project-title-bg);
 }
 
 /* setting the background colour and aligning the content to display right and setting a background colour incase the image 
 doesn't load and the tet to display right. */
 .hero-banner {
   background-color: var(--hearo);
+  background-image: url(../images/02-hero-bg.jpg);
   width: 100%;
   text-align: right;
   padding: 25px;
+  color: var(--hero-color);
 }
 
 /* giving the class a right margin of 5% to keep it slightly off the edge of the scren. */

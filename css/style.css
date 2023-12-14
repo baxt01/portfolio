@@ -5,7 +5,7 @@
   --name: sandybrown;
   --header-links: silver;
   --hearo: #1d0302c0;
-  --containter-border: lawngreen;
+  --container-border: lawngreen;
   --project-title-color: silver;
   --project-title: aqua;
   --project-title-bg: blue;
@@ -77,6 +77,7 @@ header ul li a:hover {
 /* setting the background colour and aligning the content to display right and setting a background colour incase the image 
 doesn't load and the tet to display right. */
 .hero-banner {
+  background-image: url(../images/02-hero-bg.jpg);
   background-color: var(--hearo);
   width: 100%;
   text-align: right;
